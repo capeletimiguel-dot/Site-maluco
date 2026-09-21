@@ -1,24 +1,407 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101528">
-  <meta name="description" content="Anúncios, sites personalizados e cursos para tirar suas ideias do papel.">
-  <title>Vitrine Digital — Anúncios, sites e cursos</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101528'/%3E%3Cpath d='M13 17l19 32 19-32H39l-7 13-7-13z' fill='%23bcff5c'/%3E%3C/svg%3E">
-  <style>
-    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#f7f8fc;background:#101528;scroll-behavior:smooth}*{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.top{border-bottom:1px solid #ffffff19}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{font-weight:900;letter-spacing:-.06em;font-size:1.5rem}.logo b{color:#bcff5c}.links{display:flex;align-items:center;gap:30px;font-size:.92rem;color:#c5cad8}.links a:hover,.footer a:hover{color:#bcff5c}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;border-radius:100px;background:#bcff5c;color:#101528;font-weight:750;padding:14px 22px;transition:transform .2s,background .2s}.nav-cta:hover,.button:hover{transform:translateY(-2px);background:#d0ff8e}.hero{padding:96px 0 100px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:550px;height:550px;border-radius:50%;background:#8255fe42;filter:blur(100px);right:-210px;top:-170px;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:50px}.eyebrow,.section-kicker{color:#bcff5c;text-transform:uppercase;letter-spacing:.16em;font-size:.8rem;font-weight:800}.hero h1{font-size:clamp(3.1rem,7vw,6.35rem);line-height:1.02;letter-spacing:-.085em;margin:20px 0 25px;max-width:750px}.hero h1 em{font-style:normal;color:#bcff5c}.lead{font-size:1.12rem;line-height:1.7;color:#c1c7d7;max-width:580px;margin:0 0 32px}.hero-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.text-link{font-weight:700;border-bottom:1px solid #c7cfdf;padding-bottom:5px}.showcase{position:relative;min-height:455px;display:grid;place-items:center}.orb{width:min(400px,90%);aspect-ratio:1;border:1px solid #ffffff38;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,#7751d1 0%,#34266c 44%,#151b32 74%);box-shadow:0 35px 95px #0007,inset 0 0 70px #ffffff15;transform:rotate(-12deg)}.orb-inner{border:1px solid #ffffff35;border-radius:50%;width:70%;aspect-ratio:1;display:grid;place-items:center;font-size:clamp(6rem,15vw,11rem);font-weight:950;letter-spacing:-.13em;color:#bcff5c;text-shadow:12px 14px 0 #101528}.float{position:absolute;background:#f5f7ff;color:#13172b;padding:16px 21px;border-radius:16px;box-shadow:0 20px 45px #080b1c88;font-weight:800;transform:rotate(-7deg);left:0;top:70px}.float.second{left:auto;right:-4px;top:auto;bottom:45px;background:#bcff5c;transform:rotate(6deg)}.services{background:#f4f5fa;color:#14182b;padding:88px 0 100px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}.section-head h2,.steps h2,.contact h2{font-size:clamp(2.2rem,4.2vw,4rem);line-height:1.08;letter-spacing:-.065em;margin:12px 0 0}.section-head p{color:#5e6577;max-width:380px;line-height:1.6}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border-radius:25px;background:#fff;padding:32px;min-height:340px;display:flex;flex-direction:column;box-shadow:0 16px 40px #1b24410b}.icon{width:52px;height:52px;border-radius:15px;background:#e8e0ff;color:#5d3acc;display:grid;place-items:center;font-size:1.5rem;font-weight:800}.card:nth-child(2) .icon{background:#e9f6d3;color:#527d11}.card:nth-child(3) .icon{background:#e3eaff;color:#3158bb}.card h3{font-size:1.55rem;letter-spacing:-.04em;margin:30px 0 8px}.card p{line-height:1.6;color:#62697a;margin:0}.card a{margin-top:auto;padding-top:26px;font-weight:800;display:inline-flex;gap:10px;align-items:center}.card a:hover{color:#6846c5}.steps{padding:90px 0}.steps-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px}.steps-intro p{color:#c1c7d7;line-height:1.7;max-width:440px}.step{display:flex;gap:22px;padding:26px 0;border-bottom:1px solid #ffffff24}.step:first-child{border-top:1px solid #ffffff24}.num{color:#bcff5c;font-weight:800}.step h3{margin:0 0 8px;font-size:1.2rem}.step p{margin:0;color:#aab2c5;line-height:1.6}.contact{background:#bcff5c;color:#101528;padding:85px 0}.contact-row{display:flex;justify-content:space-between;gap:32px;align-items:end}.contact h2{max-width:700px}.contact p{line-height:1.6;max-width:620px}.contact-note{border:1px solid #10152865;border-radius:18px;padding:20px 24px;min-width:260px;line-height:1.6}.contact-note strong{display:block}.footer{padding:28px 0;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#aab2c5;font-size:.9rem}.footer a{color:#eef1f7}@media(max-width:850px){.hero-grid,.steps-grid{grid-template-columns:1fr}.showcase{min-height:310px}.orb{width:280px}.float{left:12%;top:20px}.float.second{right:10%;bottom:0}.cards{grid-template-columns:1fr}.card{min-height:275px}.section-head,.contact-row{display:block}.contact-note{margin-top:30px}.links{gap:16px}}@media(max-width:560px){.wrap{width:min(100% - 32px,1160px)}.nav{min-height:70px}.links{display:none}.hero{padding:62px 0 72px}.hero h1{font-size:3.65rem}.showcase{margin-top:12px}.float{font-size:.8rem}.services,.steps,.contact{padding:65px 0}.section-head{margin-bottom:24px}.card{padding:26px}.nav-cta{padding:11px 16px;font-size:.85rem}}@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*{transition:none!important}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Miguel Capeleti — Sites e Anúncios Animados</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0F1115;
+    --panel: #171A21;
+    --panel-2: #1E222B;
+    --text: #EDEAE2;
+    --text-dim: #A6A9B2;
+    --accent: #FF5A3C;
+    --accent-2: #33D9BE;
+    --line: #2A2E38;
+    --radius: 4px;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .display {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  a { color: inherit; }
+  .wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .scroll-x { overflow-x: auto; }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 20;
+    background: rgba(15, 17, 21, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+  }
+  .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+  .logo span { color: var(--accent); }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+  .btn-primary { background: var(--accent); color: #14100D; }
+  .btn-primary:hover { transform: translateY(-1px); }
+  .btn-ghost { border-color: var(--line); color: var(--text); }
+  .btn-ghost:hover { border-color: var(--text-dim); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: 88px 0 72px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 64px 64px;
+    opacity: 0.28;
+    mask-image: radial-gradient(ellipse 60% 60% at 70% 30%, #000 0%, transparent 75%);
+  }
+  .eyebrow {
+    color: var(--text-dim);
+    font-size: 0.92rem;
+    margin-bottom: 18px;
+    position: relative;
+  }
+  .hero h1 {
+    font-size: clamp(2.3rem, 6vw, 4.1rem);
+    line-height: 1.06;
+    position: relative;
+    max-width: 14ch;
+  }
+  .hero .line {
+    display: block;
+    overflow: hidden;
+  }
+  .hero .line span {
+    display: inline-block;
+    animation: rise 0.7s cubic-bezier(.2,.8,.2,1) both;
+  }
+  .hero .line:nth-child(1) span { animation-delay: 0.05s; }
+  .hero .line:nth-child(2) span { animation-delay: 0.18s; color: var(--accent-2); }
+  .hero .line:nth-child(3) span { animation-delay: 0.31s; }
+  @keyframes rise {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero .line span { animation: none; }
+  }
+  .hero p.lead {
+    margin-top: 24px;
+    color: var(--text-dim);
+    font-size: 1.08rem;
+    max-width: 46ch;
+    position: relative;
+  }
+  .hero-cta {
+    margin-top: 34px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .btn-lg { padding: 14px 26px; font-size: 1rem; }
+
+  /* ---------- Marquee proof-of-motion strip ---------- */
+  .strip {
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+    padding: 14px 0;
+    background: var(--panel);
+  }
+  .strip-track {
+    display: flex;
+    gap: 48px;
+    white-space: nowrap;
+    width: max-content;
+    animation: marquee 22s linear infinite;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    color: var(--text-dim);
+    font-size: 0.95rem;
+  }
+  .strip-track span::after { content: "—"; margin-left: 48px; color: var(--line); }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .strip-track { animation: none; }
+  }
+
+  /* ---------- Services ---------- */
+  section { padding: 84px 0; border-bottom: 1px solid var(--line); }
+  .section-head { margin-bottom: 48px; max-width: 56ch; }
+  .section-head h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); }
+  .section-head p { color: var(--text-dim); margin-top: 12px; }
+
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .service {
+    background: var(--panel);
+    padding: 36px 32px;
+  }
+  .service h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+  }
+  .service p { color: var(--text-dim); font-size: 0.98rem; }
+  .service .tag {
+    display: inline-block;
+    color: var(--accent-2);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .service:nth-child(2) .tag { color: var(--accent); }
+  .service ul { margin: 18px 0 0; padding-left: 18px; color: var(--text-dim); font-size: 0.94rem; }
+  .service li { margin-bottom: 6px; }
+  @media (max-width: 720px) {
+    .services { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Process (real sequence → numbered) ---------- */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .step { border-top: 1px solid var(--line); padding-top: 18px; }
+  .step .num {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+  .step h3 { font-size: 1.1rem; margin: 10px 0 8px; }
+  .step p { color: var(--text-dim); font-size: 0.94rem; }
+  @media (max-width: 720px) {
+    .steps { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .contact-card {
+    background: var(--panel);
+    padding: 28px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .contact-card:hover { background: var(--panel-2); }
+  .contact-card .k { color: var(--text-dim); font-size: 0.82rem; }
+  .contact-card .v {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 1.08rem;
+    word-break: break-word;
+  }
+  @media (max-width: 720px) {
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+
+  footer {
+    padding: 32px 0 calc(32px + env(safe-area-inset-bottom, 0px));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+</style>
 </head>
 <body>
-  <header class="top"><nav class="wrap nav" aria-label="Navegação principal"><a class="logo" href="#inicio">VITRINE<b>.</b></a><div class="links"><a href="#servicos">Serviços</a><a href="#como-funciona">Como funciona</a><a href="#contato">Contato</a></div><a class="nav-cta" href="#contato">Vamos conversar ↗</a></nav></header>
-  <main>
-    <section class="hero" id="inicio"><div class="wrap hero-grid"><div><div class="eyebrow">Soluções digitais para sua ideia</div><h1>Seu negócio merece <em>aparecer.</em></h1><p class="lead">Anúncios que apresentam sua marca, sites personalizados para mostrar o que você oferece e cursos para aprender no seu ritmo.</p><div class="hero-actions"><a class="button" href="#servicos">Conheça os serviços ↗</a><a class="text-link" href="#contato">Fale sobre seu projeto</a></div></div><div class="showcase" aria-hidden="true"><div class="orb"><div class="orb-inner">V.</div></div><div class="float">Sua marca em destaque ✦</div><div class="float second">Ideia → presença digital</div></div></div></section>
-    <section class="services" id="servicos"><div class="wrap"><div class="section-head"><div><span class="section-kicker">O que oferecemos</span><h2>Escolha seu próximo passo.</h2></div><p>Três caminhos para apresentar, construir e desenvolver sua presença digital.</p></div><div class="cards"><article class="card"><div class="icon" aria-hidden="true">✳</div><h3>Anúncios</h3><p>Peças criativas e campanhas para comunicar seus produtos ou serviços com clareza e chamar a atenção do público certo.</p><a href="#contato">Quero anunciar <span aria-hidden="true">↗</span></a></article><article class="card"><div class="icon" aria-hidden="true">⌘</div><h3>Sites personalizados</h3><p>Uma página com a identidade da sua marca, adaptada para celular e preparada para apresentar seu negócio de forma profissional.</p><a href="#contato">Quero um site <span aria-hidden="true">↗</span></a></article><article class="card"><div class="icon" aria-hidden="true">✦</div><h3>Cursos</h3><p>Conteúdos para aprender habilidades digitais de maneira prática. Consulte os temas e turmas disponíveis.</p><a href="#contato">Conhecer os cursos <span aria-hidden="true">↗</span></a></article></div></div></section>
-    <section class="steps" id="como-funciona"><div class="wrap steps-grid"><div class="steps-intro"><span class="section-kicker">Como funciona</span><h2>Da primeira conversa à entrega.</h2><p>Cada projeto começa entendendo sua necessidade. Depois, definimos a solução e os próximos passos.</p></div><div><div class="step"><span class="num">01</span><div><h3>Conte sua ideia</h3><p>Explique seu negócio, seus objetivos e o que precisa agora.</p></div></div><div class="step"><span class="num">02</span><div><h3>Receba uma proposta</h3><p>Alinhamos escopo, prazo e valores antes de começar.</p></div></div><div class="step"><span class="num">03</span><div><h3>Veja seu projeto ganhar forma</h3><p>Acompanhe a criação e peça os ajustes combinados.</p></div></div></div></div></section>
-    <section class="contact" id="contato"><div class="wrap contact-row"><div><span class="section-kicker" style="color:#263315">Próximo passo</span><h2>Vamos transformar sua ideia em algo real?</h2><p>Para solicitar um orçamento ou saber sobre os cursos, adicione seus dados de contato neste espaço antes de divulgar a página.</p></div><div class="contact-note"><strong>Seu contato aqui</strong>WhatsApp, e-mail ou rede social</div></div></section>
-  </main>
-  <footer class="wrap footer"><span>© 2026 Vitrine Digital</span><a href="#inicio">Voltar ao início ↑</a></footer>
+
+<header>
+  <div class="header-inner wrap" style="padding-left:0; padding-right:0;">
+    <div class="logo">Miguel <span>Capeleti</span></div>
+    <a class="btn btn-primary" href="https://wa.me/5516996262448" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+</header>
+
+<section class="hero" style="padding-top: 88px;">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">Desenvolvimento web e criativos para anúncios</p>
+    <h1>
+      <span class="line"><span>Sites que carregam</span></span>
+      <span class="line"><span>rápido. Anúncios que</span></span>
+      <span class="line"><span>não passam despercebidos.</span></span>
+    </h1>
+    <p class="lead">Eu projeto e construo sites, painéis administrativos e peças animadas para redes sociais — do zero, sob medida para o seu negócio.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary btn-lg" href="https://wa.me/5516996262448" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <a class="btn btn-ghost btn-lg" href="#contato">Ver contatos</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="scroll-x">
+    <div class="strip-track">
+      <span>Sites institucionais</span>
+      <span>Lojas online</span>
+      <span>Painéis administrativos</span>
+      <span>Anúncios animados</span>
+      <span>Automação de processos</span>
+      <span>Sites institucionais</span>
+      <span>Lojas online</span>
+      <span>Painéis administrativos</span>
+      <span>Anúncios animados</span>
+      <span>Automação de processos</span>
+    </div>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>O que eu faço</h2>
+      <p>Duas frentes que trabalham juntas: presença digital e comunicação visual.</p>
+    </div>
+    <div class="services">
+      <div class="service">
+        <span class="tag">Desenvolvimento</span>
+        <h3>Sites e sistemas</h3>
+        <p>Sites institucionais, lojas e painéis administrativos construídos do zero, com foco em velocidade e facilidade de uso.</p>
+        <ul>
+          <li>Sites institucionais e landing pages</li>
+          <li>Lojas e catálogos online</li>
+          <li>Painéis administrativos sob medida</li>
+          <li>Automação de tarefas e integrações</li>
+        </ul>
+      </div>
+      <div class="service">
+        <span class="tag">Comunicação visual</span>
+        <h3>Anúncios animados</h3>
+        <p>Criativos em movimento para redes sociais e campanhas — feitos para prender a atenção nos primeiros segundos.</p>
+        <ul>
+          <li>Anúncios animados para Instagram e Facebook</li>
+          <li>Vídeos curtos para divulgação de produtos</li>
+          <li>Identidade visual para campanhas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="processo">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Como funciona</h2>
+      <p>Um processo direto, sem enrolação, do primeiro contato até a entrega.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <h3>Conversa inicial</h3>
+        <p>Você me conta o que precisa, eu entendo o objetivo e o prazo.</p>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Proposta e desenvolvimento</h3>
+        <p>Defino escopo e valor, e coloco a mão na massa com atualizações no caminho.</p>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <h3>Entrega e ajustes</h3>
+        <p>Você revisa, eu ajusto o que for preciso até ficar no ponto certo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" style="border-bottom: none;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Contato</h2>
+      <p>Chama no WhatsApp para orçamento rápido, ou fala por e-mail e Instagram.</p>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card" href="https://wa.me/5516996262448" target="_blank" rel="noopener">
+        <span class="k">WhatsApp</span>
+        <span class="v">(16) 99626-2448</span>
+      </a>
+      <a class="contact-card" href="mailto:Capeletimiguel@gmail.com">
+        <span class="k">E-mail</span>
+        <span class="v">Capeletimiguel@gmail.com</span>
+      </a>
+      <a class="contact-card" href="https://instagram.com/m.lopescapeleti" target="_blank" rel="noopener">
+        <span class="k">Instagram</span>
+        <span class="v">@m.lopescapeleti</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <span>Miguel Capeleti — sites e anúncios animados</span>
+  <span id="year"></span>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
